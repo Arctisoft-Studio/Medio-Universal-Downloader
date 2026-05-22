@@ -17,7 +17,7 @@
 - **Audio Extraction:** Extract audio as MP3, FLAC, OGG, OPUS, WAV, M4A, AAC, WMA with format-aware quality presets
 - **1000+ Supported Platforms:** Download from all yt-dlp supported platforms
 - **Playlist Processing (Premium):** Batch-download playlists and mixes from supported platforms
-- **Queue System:** Sequential automated downloads with up to 5 queued items for Basic users and 50 for Premium users, with a built-in queue editor for reviewing and managing pending downloads
+- **Queue System:** Automated queue processing with up to 5 queued items for Basic users and 50 for Premium users, plus a queue editor and configurable concurrent download processing from 1 to 5 active items
 - **Clip & Trim:** Download a specific time range in HH:MM:SS format with auto-fill from detected duration, inline validation, and a clear action
 - **Stream Loop:** Repeat audio or video output 2x, 3x, 5x, or 10x in a single download pass across all supported formats
 - **Hardware Acceleration:** GPU encoding via NVIDIA NVENC, AMD AMF, or Intel QuickSync
@@ -173,7 +173,7 @@ Premium is activated through Arctisoft Studio Hub. Each Arctisoft Studio applica
 | Cloud-synced settings | ✔ | ✔ |
 | Cross-device profile synchronization | ✔ | ✔ |
 | Download history | 60 entries (2 pages) | 300 entries (10 pages) |
-| Active device limit | Up to 2 devices | Up to 2 devices |
+| Active device limit | Managed by Hub/license service | Managed by Hub/license service |
 | **PRICE** | **Free** | **€7.99** (one-time) |
 
 Each Arctisoft Studio application uses its own independent license key. Purchase a Premium license for Medio through the Hub to unlock all Premium features.
@@ -193,7 +193,7 @@ Medio uses a hybrid architecture that supports both cloud sync and local-only op
 
 **Why Cloud Storage?**
 
-Since internet connectivity is required for downloads anyway, cloud storage adds valuable benefits without additional overhead:
+For signed-in users, cloud storage adds useful backup and cross-device benefits while downloads, license checks and tool updates already require internet access:
 - **Data Persistence:** Your settings, statistics, and progress are safely stored even if you reinstall Windows
 - **Zero Configuration:** No manual backups or exports needed - everything is automatic
 - **Cross-Device Sync:** Signed-in users can switch between authorized devices without reconfiguring
@@ -216,11 +216,11 @@ Medio stores the following data in your cloud profile:
 - **Download History:** Complete list of URLs, titles, and dates - only stored when "Track and Save Downloads in History" is **enabled**
 
 **What is NOT Stored:**
-- Personal identifying information (name, address, phone number)
-- Payment details (handled externally, not stored by Medio)
+- Personal details beyond the account email/profile data required for Hub sign-in, licensing and cloud sync
+- Payment details (handled by the payment provider and Hub checkout, not stored by Medio)
 - Downloaded file content (only metadata is tracked)
 - Browsing activity outside of Medio
-- Device location beyond country-level (used for license management only)
+- Precise device location
 
 **Note:** Your email address is used as your account login identifier and is stored for authentication purposes.
 
@@ -248,12 +248,12 @@ Settings → Advanced → "Track and Save Downloads in History" → Set to **Dis
 ### Data Retention and Deletion
 
 **Deleting Your Data:**
-- **Individual History Entries:** Right-click any entry in the History tab → Delete
-- **Complete Account Deletion:** Navigate to Settings → scroll to "Delete Account" button → confirm twice
+- **Individual History Entries:** Right-click any entry in the History tab -> Delete
+- **Complete Account Deletion:** Open Arctisoft Studio Hub -> Settings -> Data -> Delete Account, then confirm the deletion flow
 
 **What Happens When Deleted:**
 - All cloud data is permanently removed
-- You can sign in again to create a fresh profile
+- Account-bound cloud profile and license access are removed with the deleted Arctisoft account
 - Downloaded files on your local device are NOT affected
 
 ## Authentication and Account Setup
@@ -266,7 +266,7 @@ Launch Medio without signing in to use it immediately. In guest mode:
 - All settings, history, statistics, and full level/rank/XP progression are stored locally on your device
 - A custom profile image can be set directly from the dashboard
 - All 1000+ supported platforms are available for single downloads
-- No account or internet connection is required beyond the download itself
+- No account is required. Internet is still required for downloads and may be needed for first-time tool downloads or tool update checks
 
 ### Signing In Through Arctisoft Hub
 
@@ -497,7 +497,7 @@ A: Medio provides a GUI, cloud sync, queue management, and audio processing on t
 
 **Q: What data does Medio collect?**
 
-A: Settings, statistics (download counts, MB, XP/level), and license status. If history tracking is enabled (default), download URLs and titles are also stored. **No personal identifying information** is collected.
+A: Medio stores the account email/login and cloud profile data needed for Hub sign-in, settings sync, statistics (download counts, MB, XP/level), license status and optional avatar sync. If history tracking is enabled (default), download URLs and titles are also stored. Downloaded file contents, payment details and browsing outside Medio are not stored.
 
 **Q: Why cloud storage instead of local?**
 
@@ -505,7 +505,7 @@ A: Cloud storage provides automatic settings backup, persistent progress across 
 
 **Q: Can I use Medio offline?**
 
-A: Yes. Guest mode stores all data locally and does not require an account or cloud connectivity. You only need an internet connection for the downloads themselves.
+A: You can open Medio and use local settings/history without an account or cloud connectivity. Downloading media, first-time tool downloads, tool update checks, cloud sync and license validation require internet access.
 
 **Q: Is it legal to download videos from YouTube?**
 
@@ -522,14 +522,14 @@ A: No. Licenses are non-transferable and tied to your Arctisoft account.
 **Q: How do I completely delete all my data?**
 
 A: Delete individual history entries via right-click in the History tab. For complete account deletion:
-- Navigate to Settings → scroll to "Delete Account" button → confirm twice
+- Open Arctisoft Studio Hub -> Settings -> Data -> Delete Account, then confirm the deletion flow
 - You can also contact support via the GitHub issue tracker
 
-Your license remains valid after account deletion and you can create a fresh profile by signing in again through Arctisoft Hub.
+Deleting the Arctisoft account removes the cloud profile and account-bound license access. Downloaded files on your device are not affected.
 
 **Q: What happens to my data if my account is deleted?**
 
-A: Only cloud data (settings, history) is removed. Downloaded files on your device are never affected. Your license remains valid and you can sign in again through Arctisoft Hub.
+A: Cloud data such as settings, statistics and history is removed, and account-bound license access is removed with the deleted Arctisoft account. Downloaded files on your device are never affected.
 
 **Q: What if I reinstall Windows or switch computers?**
 
@@ -537,7 +537,7 @@ A: If you are signed in through Arctisoft Hub, your cloud profile (settings, sta
 
 **Q: Can I use my license on multiple devices?**
 
-A: Yes, up to 2 active devices. Sign in through Arctisoft Hub on a new device to sync your settings, statistics, and history; if a third device is authorized, the oldest authorized device may be replaced.
+A: Yes, on authorized devices managed by Arctisoft Hub and the license service. Use Hub's device management to review or deauthorize devices; enforced limits are handled by the license service.
 
 **Q: Does my Premium key work across all Arctisoft-Studio applications?**
 
