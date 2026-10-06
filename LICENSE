@@ -1,189 +1,179 @@
-MEDIO - UNIVERSAL DOWNLOADER LICENSE AGREEMENT
-===============================================
-Copyright (c) 2024-2026 Bernd Julian Hagen. All rights reserved.
+Medio - Universal Downloader
+End User License Agreement (EULA)
 
-This document outlines the terms under which Medio - Universal Downloader 
-("Software") is provided to you. By using the Software, you agree to these terms.
+Copyright (c) 2024-2026 Arctisoft Studio / Bernd Julian Hagen
+All rights reserved.
 
-================================================================================
+Please read this agreement carefully before installing or using the software.
+By accepting this agreement, you agree to all terms below.
+
+
 1. LICENSE GRANT
-================================================================================
 
-You are granted a limited, non-exclusive, non-transferable license to:
+Arctisoft Studio grants you a non-exclusive, non-transferable license to
+install and use Medio - Universal Downloader ("Software") on any Windows
+computer you own or control, for personal, non-commercial purposes.
 
-  - Download and install the Software on your personal devices
-  - Use the Software for personal and commercial purposes
-  - Share the Software with others for promotional purposes
 
-This license does not permit modification, reverse engineering, or commercial 
-distribution of the Software.
+2. PERMITTED USE
 
-================================================================================
-2. LICENSE KEY USAGE
-================================================================================
+You may:
 
-License keys are personal and non-transferable:
+  - Install the Software on an unlimited number of your own devices.
+  - Use the Software for personal media downloading and conversion.
+  - Make backup copies of the installer for personal archival purposes.
+  - Distribute the original, unmodified installer for promotional purposes.
 
-  - Each key is intended for use by the original purchaser only
-  - Keys may be activated on up to 2 devices simultaneously
-  - Sharing or distributing your license key is prohibited
-  - Suspicious usage patterns may result in key deactivation
 
-The Author monitors activation patterns solely to prevent unauthorized sharing, 
-not to track individual user activity.
+3. RESTRICTIONS
 
-================================================================================
-3. THIRD-PARTY COMPONENTS
-================================================================================
+You may not:
 
-Medio incorporates the following open-source tools:
+  - Reverse engineer, decompile, or disassemble the Software, except where
+    applicable law permits this despite a contractual restriction.
+  - Redistribute, sell, rent, or sublicense the Software without written
+    permission from Arctisoft Studio, except for the unmodified installer
+    distribution expressly permitted above.
+  - Remove or alter any copyright, trademark, or proprietary notices.
+  - Use the Software for any purpose that violates applicable law.
 
-FFmpeg - Licensed under LGPL/GPL
-An open-source multimedia framework for audio/video processing.
-Website: https://ffmpeg.org
 
-yt-dlp - Licensed under The Unlicense (Public Domain)
-An open-source command-line tool for downloading media.
-Website: https://github.com/yt-dlp/yt-dlp
+4. LICENSE KEY USAGE
 
-Users should review and comply with the licensing terms of these components.
+Medio can be installed and used free of charge. Features marked Premium in
+the Software require the purchase of a Premium license key.
 
-================================================================================
-4. DATA HANDLING
-================================================================================
+A Premium license key is personal to one person:
 
-Your preferences and usage data are stored securely to enable features like 
-settings sync and progress tracking.
+  - A key may be used on up to 3 computers at the same time. You can
+    release a computer in Arctisoft Studio Hub to use the license on
+    another one. A computer that has not used the license for 45 days is
+    released automatically.
+  - Sharing, publishing or distributing your license key is prohibited.
+  - A license may be passed on only as a whole, using the transfer
+    function in Arctisoft Studio Hub. After a transfer you may no longer
+    use it.
+  - Keys that are misused or obtained by fraud may be deactivated.
 
-WHAT MEDIO STORES:
+The computers using a license are recorded solely to apply these limits,
+not to track individual user activity. The License Agreement in Arctisoft
+Studio Hub states the complete terms.
 
-  - Settings: Format preferences, buffer size, codec choices
-  - Statistics: Download counts and total data processed
-  - Progress: Experience points, level, and rank
-  - History: Download URLs and titles (if history tracking is enabled)
-  - License: Current license type and activation status
-  - Avatar: Your profile image (if uploaded)
 
-WHAT MEDIO DOES NOT STORE:
+5. DATA HANDLING
 
-  - Names, emails, addresses, or phone numbers
-  - Payment information (handled securely by Stripe)
-  - The actual content of downloaded files
-  - Your browsing activity outside of Medio
+Medio stores workspace state, queues, device statistics, and device history
+locally. An Arctisoft account is optional for the standalone application.
 
-PRIVACY CONTROLS:
+When signed in, account services store authentication information including
+your account email, product license records, and the Medio preferences you
+choose to synchronize. Shared account services also manage your profile
+image if you upload one through Arctisoft Studio Hub.
 
-You have control over your data:
+If history tracking is enabled while signed in, recent history is stored
+in your account. Records can include URLs, titles, dates, outcomes, formats,
+output file paths, and measured media properties. Output paths may contain
+personal folder names. Cloud history retains a bounded set of recent records;
+device history and exported records are separate from that account history.
 
-  - Disable history tracking: Settings > Advanced > History Tracking > Disabled
-  - Delete individual history entries via right-click in the History tab
-  - Delete your account: Navigate to Settings and scroll to the Delete Account button
+Medio's device usage totals are not uploaded as account usage counters.
+Downloaded media, file contents, browser passwords, and activity outside
+Medio are not uploaded as account history. Payment card information is
+handled by the payment provider rather than stored by Medio.
 
-DATA RETENTION:
+Use Settings > Privacy & Sync to control history tracking and synchronized
+preferences. History provides record removal, clearing, and export actions.
+Account management, including account deletion, is available through
+Arctisoft Studio Hub. Uninstalling Medio preserves your personal files and
+local application data; it does not delete an Arctisoft account.
 
-  - Basic accounts: Automatically deleted after 365 days of inactivity
-  - Premium accounts: Retained while license is active
 
-================================================================================
-5. AVATAR GUIDELINES
-================================================================================
+6. THIRD-PARTY COMPONENTS
 
-Uploaded profile images must not contain explicit, violent, or inappropriate 
-content. The Author reserves the right to remove violating avatars and may 
-suspend accounts for repeated violations.
+Medio uses the following open-source tools when installed:
 
-================================================================================
-6. PAYMENT AND REFUNDS
-================================================================================
+  FFmpeg    LGPL/GPL        Multimedia framework for audio/video processing
+  yt-dlp    The Unlicense   Command-line tool for downloading media
 
-Payments are processed securely through Stripe. The Author does not store any 
-payment information.
+Third-party components remain subject to their own licenses. This agreement
+does not replace or restrict rights granted by those licenses. Component
+license information and links are available in Medio's Components workspace.
+The installer also uses Inter, Cormorant Garamond, and Space Grotesk fonts
+under the SIL Open Font License; their notices accompany the installer source
+and are embedded with its font resources.
 
-  - License keys are delivered via email within 5-10 minutes of purchase
-  - License keys are non-refundable once delivered
-  - For payment issues, contact Stripe support
-  - For license delivery issues, contact the Author
 
-================================================================================
-7. YOUR RESPONSIBILITIES
-================================================================================
+7. PAYMENT AND REFUNDS
+
+Payments are processed through Stripe. Medio does not store payment card
+information.
+
+  - License keys are delivered via email after purchase.
+  - If your purchase email matches your Arctisoft account, the license is linked automatically.
+  - 14-day money-back guarantee: you may ask for a full refund of a
+    Premium license within 14 days of purchase, without giving a reason.
+    The license ends when the refund is issued.
+  - Statutory consumer rights remain unaffected.
+  - Contact Arctisoft Studio for purchase, refund, or activation support.
+
+
+8. YOUR RESPONSIBILITIES
 
 When using Medio, you are responsible for:
 
-  - Ensuring you have the legal right to download content
-  - Complying with the terms of service of content platforms
-  - Following all applicable copyright and intellectual property laws
-  - Meeting age requirements for any content you access
-  - Complying with your local jurisdiction's laws
+  - Ensuring you have the legal right to download content.
+  - Complying with the terms of service of content platforms.
+  - Following all applicable copyright and intellectual property laws.
+  - Meeting age requirements for any content you access.
+  - Complying with your local jurisdiction's laws.
 
-Medio is a technical tool that facilitates media downloads. The Software does 
-not filter, restrict, or make judgments about content. This neutrality means 
-that legal compliance is your responsibility.
+Medio is a technical tool that facilitates media downloads. The Software does
+not filter, restrict, or make judgments about content.
 
-The Author is not responsible for:
 
-  - How you choose to use the downloaded content
-  - Copyright infringement or other legal violations
-  - Violations of platform terms of service
-  - Access to age-restricted or inappropriate content
+9. DISCLAIMER OF WARRANTIES
 
-================================================================================
-8. DISCLAIMER OF WARRANTIES
-================================================================================
+To the extent permitted by applicable law, the Software is provided "as is"
+without warranty of any kind, express or
+implied, including but not limited to warranties of merchantability, fitness
+for a particular purpose, or non-infringement. The entire risk as to the
+quality and performance of the Software is with you. Nothing in this
+agreement excludes mandatory consumer guarantees or other statutory rights.
 
-The Software is provided "AS IS" without warranty of any kind. The Author makes 
-no guarantees regarding:
 
-  - Continuous compatibility with any platform
-  - Download speed or availability
-  - Freedom from errors or interruptions
-  - Fitness for any particular purpose
+10. LIMITATION OF LIABILITY
 
-Platform changes, network conditions, or technical limitations may affect the 
-Software's functionality at any time.
+To the maximum extent permitted by applicable law, Arctisoft Studio shall
+not be liable for any indirect, incidental, special, exemplary, or
+consequential damages (including but not limited to loss of data, loss of
+profits, or business interruption) arising from the use of or inability
+to use the Software, even if advised of the possibility.
 
-================================================================================
-9. LIMITATION OF LIABILITY
-================================================================================
 
-To the maximum extent permitted by law, the Author shall not be liable for any 
-damages arising from your use of the Software, including but not limited to:
+11. LICENSE TERMINATION
 
-  - Loss of data or business interruption
-  - Legal consequences from copyright infringement
-  - Claims by third parties related to downloaded content
-  - Technical issues or service interruptions
+Arctisoft Studio may terminate your license if you:
 
-================================================================================
-10. LICENSE TERMINATION
-================================================================================
-
-The Author may terminate your license if you:
-
-  - Violate any terms of this agreement
-  - Share or distribute your license key
-  - Use the Software for illegal purposes
+  - Violate any terms of this agreement.
+  - Share or distribute your license key.
+  - Use the Software for illegal purposes.
 
 Upon termination, you must stop using the Software and delete all copies.
 
-================================================================================
-11. GENERAL TERMS
-================================================================================
 
-By using Medio, you acknowledge that you have read, understood, and agree to 
-these terms. This agreement constitutes the entire understanding between you 
-and the Author regarding the Software.
+12. GOVERNING LAW
 
-The Author reserves the right to update these terms. Continued use after changes 
-indicates acceptance of the updated terms.
+This Agreement is governed by the laws of Austria. Any dispute arising out
+of or in connection with this Agreement shall be subject to the exclusive
+jurisdiction of the competent courts in Austria, subject to mandatory
+consumer protections and jurisdiction rights that apply to you.
 
-This agreement is governed by the laws of the Author's jurisdiction.
 
-================================================================================
-CONTACT
-================================================================================
+13. CONTACT
 
-For questions about this license or the Software:
-- GitHub Discussions: https://github.com/BerndHagen/Medio-Universal-Downloader/discussions
+Arctisoft Studio / Bernd Julian Hagen
+Email:   support@arctisoft-studio.com
+Website: https://arctisoft-studio.com
 
-Thank you for using Medio - Universal Downloader.
+By selecting "I accept the license agreement" you confirm that you have read,
+understood, and agree to be bound by the terms of this EULA.
